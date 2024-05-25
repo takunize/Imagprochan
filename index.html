@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Básica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Imagprochan</h1>
+    </header>
+    <main>
+        <section>
+            <p>Pagina web para proyecto de estudio takunize o kaze o toge.</p>
+            <button onclick="changeBackgroundColor()">Cambiar Color de Fondo</button>
+        </section>
+        <section>
+            <h2>Imagenes Anime</h2>
+            <div class="gallery">
+                <img src="imagen-epico-uno.jpg" alt="Imagen 1" onclick="openModal('imagen-epico-uno.jpg')">
+                <img src="imagen-epico-dos.jpg" alt="Imagen 2" onclick="openModal('imagen-epico-dos.jpg')">
+                <img src="imagen-epico-tres.jpg" alt="Imagen 3" onclick="openModal('imagen-epico-tres.jpg')">
+                <img src="imagen-epico-cuatro.jpg" alt="Imagen 3" onclick="openModal('imagen-epico-cuatro.jpg')">
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 kaze toge takunize</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
